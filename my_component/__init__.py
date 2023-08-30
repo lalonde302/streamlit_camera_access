@@ -23,11 +23,12 @@ if not _RELEASE:
         # We give the component a simple, descriptive name ("my_component"
         # does not fit this bill, so please choose something better for your
         # own component :)
-        "my_component",
+        "streamlit_camera_access",
         # Pass `url` here to tell Streamlit that the component will be served
         # by the local dev server that you run via `npm run start`.
         # (This is useful while your component is in development.)
-        url="http://localhost:3001",
+        #url="http://localhost:3001",
+        url="http://172.232.21.64:3000",
     )
 else:
     # When we're distributing a production version of the component, we'll
@@ -74,4 +75,7 @@ def my_component(key=None):
 
     # We could modify the value returned from the component if we wanted.
     # There's no need to do this in our simple example - but it's an option.
+
     return component_value
+
+#my_component()
