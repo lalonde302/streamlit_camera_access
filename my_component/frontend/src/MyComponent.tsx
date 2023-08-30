@@ -46,14 +46,15 @@ class MyComponent extends StreamlitComponentBase<State> {
     return (
       <span>
         <button
-          style={style}
+         style={style}
           onClick={this.onClicked}
           disabled={this.props.disabled}
-          onFocus={this._onFocus}
-          onBlur={this._onBlur}
-        >
+         onFocus={this._onFocus}
+         onBlur={this._onBlur}
+       >
           Camera
         </button>
+        <input type="file" accept="image/*,video/*", onchange={this.></input>
       </span>
     )
   }
